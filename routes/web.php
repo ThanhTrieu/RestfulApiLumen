@@ -47,6 +47,8 @@ $router->group([
 	// su dung controller cho router
 	$router->get('/product','ProductController@index');
 	$router->get('/view','ProductController@view');
+	$router->get('/get-all-users','UserController@index');
+	$router->post('/user-login', 'UserController@login');
 });
 
 
